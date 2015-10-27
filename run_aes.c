@@ -183,7 +183,6 @@ int main()
 
     free(return_cipher);
     free(cipher);					 
-    free(cipher_text);
     free(expandedKey);
 
     return 0;
