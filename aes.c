@@ -137,7 +137,7 @@ void MixColumn(unsigned char * block)
     uint8_t j = 0, bits = 0;
     uint8_t mask = 0, t = 0;
 
-    unsigned char block_de_4bits[4], temp[4];
+    unsigned char block_de_4bits[5], temp[5];
 
     memset(block_de_4bits, 0, sizeof(block_de_4bits));
     memset(temp, 0, sizeof(temp));
