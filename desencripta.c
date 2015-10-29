@@ -141,7 +141,7 @@ void inverse_MixColumn(uint8_t * block)
 {
     short bits = 0;
     uint8_t j = 0, i, ii;
-    uint8_t temp[4], block_de_4bits[4];
+    uint8_t temp[5], block_de_4bits[5];
     uint8_t indice = 0, byte = 0;
     uint8_t mask = 0;
 
@@ -282,7 +282,7 @@ uint8_t * rounds_des(uint8_t block[], unsigned char * expanded_key)
 uint8_t * desencripta(unsigned char * cipher, unsigned char * expanded_key, int len)
 {
     int i;
-    uint8_t block_de_128bits[16];
+    uint8_t block_de_128bits[17];
     uint8_t indice = 0;
     uint8_t * cipher_block = NULL;
     uint8_t * return_cipher = (char *)malloc(len+1);
