@@ -92,7 +92,7 @@ int main()
             exit(1);
         }
 
-        unsigned char bytes_restantes[BUFFER_SIZE];  //Variable para almacenar los bytes que faltan
+        unsigned char bytes_restantes[BUFFER_SIZE+1];  //Variable para almacenar los bytes que faltan
         memset(bytes_restantes, 0, sizeof(bytes_restantes));
 
         short i;
